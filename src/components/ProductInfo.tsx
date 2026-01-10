@@ -14,7 +14,7 @@ interface ProductInfoProps {
 const ProductInfo = ({
   sku = "RUG-SOFT-001",
   title = "Premium Soft Round Rug",
-  description = "A beautifully crafted round rug that brings warmth and comfort to any space. The plush, high-density fibers create a luxuriously soft surface that feels gentle underfoot.",
+  description = "A beautifully crafted round rug that brings warmth and comfort to any space. The plush, high-density fibers create a luxuriously soft surface that feels gentle and warm underfoot.",
   price = 189,
   sizes = ["120 cm", "160 cm", "200 cm"],
   inStock = true,
