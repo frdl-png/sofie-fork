@@ -1,12 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductGallery from "@/components/ProductGallery";
+import ProductInfo from "@/components/ProductInfo";
+import ProductDescription from "@/components/ProductDescription";
 
 const Index = () => {
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Products", href: "/products" },
+    { label: "Rugs & Carpets", href: "/products/rugs" },
+    { label: "Premium Soft Round Rug" },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-page">
+      <Navbar />
+
+      <main className="container py-4">
+        <Breadcrumb items={breadcrumbItems} />
+
+        {/* Product section */}
+        <section className="grid lg:grid-cols-2 gap-8 lg:gap-12 py-6">
+          {/* Left - Gallery */}
+          <div className="lg:sticky lg:top-36 lg:self-start">
+            <ProductGallery />
+          </div>
+
+          {/* Right - Product Info */}
+          <div>
+            <ProductInfo />
+          </div>
+        </section>
+
+        {/* Product Description */}
+        <ProductDescription />
+      </main>
+
+      {/* Footer spacer */}
+      <div className="h-24 bg-page" />
     </div>
   );
 };
