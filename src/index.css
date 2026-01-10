@@ -80,7 +80,7 @@
     --banner-border: 30 15% 90%;
     
     /* Text highlights */
-    --highlight-bg: 45 100% 70% / 0.4;
+    --highlight-bg: 45 100% 75% / 0.25;
     --highlight-text: 220 15% 15%;
 
     /* Stock/success indicator */
