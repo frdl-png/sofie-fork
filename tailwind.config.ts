@@ -7,7 +7,7 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
         "2xl": "1400px",
       },
@@ -47,6 +47,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +61,32 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Experimental colors for research manipulation
+        nav: {
+          DEFAULT: "hsl(var(--nav-bg))",
+          border: "hsl(var(--nav-border))",
+          accent: "hsl(var(--nav-accent))",
+        },
+        page: {
+          DEFAULT: "hsl(var(--page-bg))",
+        },
+        product: {
+          DEFAULT: "hsl(var(--product-bg))",
+        },
+        separator: {
+          DEFAULT: "hsl(var(--separator-color))",
+        },
+        bullet: {
+          DEFAULT: "hsl(var(--bullet-color))",
+        },
+        banner: {
+          DEFAULT: "hsl(var(--banner-bg))",
+          border: "hsl(var(--banner-border))",
+        },
+        highlight: {
+          DEFAULT: "hsl(var(--highlight-bg))",
+          foreground: "hsl(var(--highlight-text))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +95,16 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "zoom-in": {
+          from: { transform: "scale(1)" },
+          to: { transform: "scale(1.5)" },
         },
       },
       animation: {
