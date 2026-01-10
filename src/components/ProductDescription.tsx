@@ -22,23 +22,9 @@ const ProductDescription = ({
   ],
   highlightedWords = ["soft", "comfort", "plush"],
 }: ProductDescriptionProps) => {
-  // Function to highlight specific words in text
+  // Function to highlight specific words in text (disabled - returns plain text)
   const highlightText = (text: string) => {
-    if (!highlightedWords.length) return text;
-
-    const regex = new RegExp(`(${highlightedWords.join("|")})`, "gi");
-    const parts = text.split(regex);
-
-    return parts.map((part, index) => {
-      if (highlightedWords.some((word) => word.toLowerCase() === part.toLowerCase())) {
-        return (
-          <span key={index} className="text-highlight">
-            {part}
-          </span>
-        );
-      }
-      return part;
-    });
+    return text;
   };
 
   return (
