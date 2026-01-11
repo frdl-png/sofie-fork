@@ -36,6 +36,12 @@ This document lists the isolated subpages created for the Premium Soft Round Rug
 - **Title**: Premium Soft Round Rug - Marble
 - **Description**: Elegantly displayed on luxurious white marble flooring
 
+### 6. Terrazzo Floor
+- **URL**: `/rug-terrazzo` or `http://localhost:8080/rug-terrazzo`
+- **SKU**: RUG-SOFT-001-TZ
+- **Title**: Premium Soft Round Rug - Terrazzo
+- **Description**: Stylishly presented on speckled terrazzo stone flooring
+
 ## Technical Details
 
 All pages are fully isolated with no cross-linking between variations.

@@ -9,6 +9,7 @@ import RugDarkWood from "./pages/RugDarkWood";
 import RugLightOak from "./pages/RugLightOak";
 import RugConcrete from "./pages/RugConcrete";
 import RugMarble from "./pages/RugMarble";
+import RugTerrazzo from "./pages/RugTerrazzo";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/rug-light-oak" element={<RugLightOak />} />
           <Route path="/rug-concrete" element={<RugConcrete />} />
           <Route path="/rug-marble" element={<RugMarble />} />
+          <Route path="/rug-terrazzo" element={<RugTerrazzo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
