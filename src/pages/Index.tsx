@@ -28,7 +28,10 @@ const Index = () => {
 
           {/* Right - Product Info */}
           <div>
-            <ProductInfo />
+            <ProductInfo
+              title="Premium Soft Round Rug"
+              description="A beautifully crafted round rug that brings warmth and comfort to any space. The plush, high-density fibers create a luxuriously soft surface that feels gentle and warm underfoot."
+            />
           </div>
         </section>
 
